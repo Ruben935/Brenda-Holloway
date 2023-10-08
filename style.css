@@ -1,0 +1,30 @@
+body{
+    background-color: lightgoldenrodyellow
+}
+h1, h2 {
+    font-family: Arial, sans-serif;
+    color: #333
+}
+
+p {
+    font-family: Georgia, serif;
+    color: green
+
+}
+
+dt {
+    font-family: Georgia, serif;
+    color:black
+}
+
+dd {
+    font-family: Georgia, serif;
+    color: green
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #333
+}
+
