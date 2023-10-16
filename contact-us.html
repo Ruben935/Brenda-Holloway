@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Discography</h1>
+    <table>
+        <caption>Discography</caption>
+        
+        <tbody>
+          <tr>
+            <td>Title</td>
+            <td>Record Label</td>
+            <td>Date</td>
+          </tr>
+            <tr>
+            <td>Every Little Bit Hurts</td>
+            <td>Tamla</td>
+            <td>1964</td>
+            </tr>
+            <tr>
+            <td>Brand New !</td>
+            <td>Birthright</td>
+            <td>1980</td>
+            </tr>
+            <tr>
+            <td>All It Takes </td>
+            <td>Motorcity Records </td>
+            <td>1991</td>
+            </tr>
+            <tr>
+            <td>It's A Woman's World</td>
+            <td>Volt</td>
+            <td>1999</td>
+            </tr>
+            <tr>
+            <td>My Love Is Your Love</td>
+            <td>Bestway Records</td>
+            <td>2003</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h1>Contact Us</h1>
+    <fieldset>
+        <legend>Contact Information</legend>
+        <h3>Personal Information</h3>
+        <form id="myMailerForm" method="post" action="mailto:sherd@dcccd.edu">
+          <p>
+            <label title="Enter your full name.">Name <input type="text" name="Name" placeholder="Name"></label>
+          </p>
+          <p>
+            <label title="Enter your email address.">E-Mail <input type="text" name="Email" placeholder="Email"></label>
+          </p>
+          <p>
+            <label title="Select your program.">Program</label>
+            <select name="programID">
+              <option value="">&larr;&nbsp;Select Time Zone&nbsp;&rarr;</option>
+              <option value="1">PT</option>
+              <option value="2">MT</option>
+              <option value="3">CST</option>
+              <option value="4">ET</option>
+            </select>
+          </p>
+          <p>
+            <label title="Select to be contacted."><input type="checkbox" name="contact-me"> Contact Me</label>
+          </p>
+          <p>
+            <h3>Have you heard of Brenda Holloway before?</h3>
+            Yes <input type="radio" name="xxxx" value="yyyy" checked>
+            No <input type="radio" name="xxxx" value="yyyy">
+          </p>
+          <p>
+            <label for="message">What do you know about Brenda Holloway?</label><br>
+            <textarea id="message" name="message"></textarea>
+          </p>
+          <input type="submit" name="submit" value="Send Mail">
+        </form>
+      </fieldset>
+</body>
+</html>

@@ -28,3 +28,23 @@ img {
     border: 2px solid #333
 }
 
+table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+tr {
+    border-bottom: thin solid black;
+    border-left: thin solid black;
+    border-right: thin solid black;
+    border-top: thin solid black;
+}
+
+tbody tr:hover {
+    background-color: lightgray;
+  }
+
+  tbody{
+    font-family: Georgia;
+    background-color: lightcyan
+  }
