@@ -3,31 +3,32 @@
 <head>
     <title>My First Website</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="layout.css">
+    <img src="images-web/pagelogo.png" alt="logo" id="site-logo">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="faq.html">FAQs</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact-us.html">Contact Us</a></li>
-            </ul>
+    <header class="w3-container w3-dark-blue">
+        <nav class="w3-bar">
+            <a href="index.html" class="w3-bar-item w3-button w3-hover-pink">Home</a>
+            <a href="faq.html" class="w3-bar-item w3-button w3-hover-pink" >FAQs</a>
+            <a href="gallery.html" class="w3-bar-item w3-button w3-hover-pink">Gallery</a>
+            <a href="contact-us.html" class="w3-bar-item w3-button w3-hover-pink">Contact Us</a>
         </nav>
-        <h1>Hello World!</h1>
     </header>
-
+    
+    <h1>Hello World!</h1>
     <h2>About Me:</h2>
-    <p>My name is Ruben Hernandez and I am studying computer science at Dallas College. My dream career is to work in the IT field in cyber security or as a software engineer. 
+    <p >My name is Ruben Hernandez and I am studying computer science at Dallas College. My dream career is to work in the IT field in cyber security or as a software engineer. 
         Some of my hobbies are playing video games, playing instruments, reading manga, and watching shows.</p>
 
     <h2>My Avatar:</h2>    
-    <img src="images-web/Brenda-Holloway-Images.jpg" height="300">
+    <img src="images-web/Brenda-Holloway-Images.jpg" class="w3-round" height="300">
 
     <h2>Who is my avatar?</h2>
-    <p> 
+    <p class="w3-text-dark-grey"> 
         My avatar is an American singer known as Brenda Holloway. Brenda Holloway is a singer who was a recording artist for Motown
         Records during the 1960s. Brenda Holloway left Motown Records after working with them for four years at age 22. She would 
         then retire from the music industry in the 1990s.
@@ -75,11 +76,34 @@
         legal battles, but her impact on the music industry remains notable.
     </p>
 
-    <footer>
-        <ul>
-            <li><a href="https://www.dallascollege.edu/pages/default.aspx" target="_blank">Dallas College</a></li>
-            <li><a href="mailto:pburks@dcccd.edu">Mail the professor</a></li>
-        </ul>
-    </footer>    
+    <article class="my-article w3-card">
+        <figure class="my-figure left">
+            <img src="images-web/Holloway-album-1.jpg" height="300">
+            <figcaption>"Every Little Bit Hurts" Released in 1964.</figcaption>
+        </figure>
+        <div class="my-text"> 
+            <h2>Album Details</h2>
+            <p>"Every Little Bit Hurts" is Brenda Holloway's iconic album released in 1964. The album played a significant role in her career and left a lasting impact on soul music.</p>
+        </div>
+    </article>
+
+    <article class="my-article w3-card">
+        <figure class="my-figure left"> 
+            <img src="images-web/Holloway-album-2.jpg" height="300" alt="My Love Is Your Love Album">
+            <figcaption>"My Love Is Your Love" Released in 2003.</figcaption>
+        </figure>
+        <div class="my-text"> 
+            <h2>Album Details</h2>
+            <p>"My Love Is Your Love" is Brenda Holloway's final album, released in 2003. This album showcases her enduring talent and her unique style. With a mix of classic and modern soul, it's a must-listen for any Brenda Holloway fan.</p>
+        </div>
+    </article>
+    
+    
+
+    <footer class="w3-container w3-dark-blue">
+        <a href="https://www.dallascollege.edu/pages/default.aspx" target="_blank" class="w3-button w3-light-grey w3-hover-blue">Visit Dallas College</a>
+        <a href="mailto:pburks@dcccd.edu" class="w3-button w3-light-grey w3-hover-blue">Email the Professor</a>
+    </footer>
+       
 </body>
 </html>

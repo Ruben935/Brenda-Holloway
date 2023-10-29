@@ -5,72 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="layout.css">
+    <img src="images-web/pagelogo.png" alt="logo" id="site-logo">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="faq.html">FAQs</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact-us.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="w3-container w3-dark-blue">
+    <nav class="w3-bar">
+      <a href="index.html" class="w3-bar-item w3-button w3-hover-pink">Home</a>
+      <a href="faq.html" class="w3-bar-item w3-button w3-hover-pink">FAQs</a>
+      <a href="gallery.html" class="w3-bar-item w3-button w3-hover-pink">Gallery</a>
+      <a href="contact-us.html" class="w3-bar-item w3-button w3-hover-pink">Contact Us</a>
+  </nav>
+</header>
 
     <h1>Discography</h1>
-    <table>
+    <table class="w3-table w3-border w3-card-4 ">
         <caption>Discography</caption>
         
         <tbody>
-          <tr>
+          <tr class="w3-blue">
             <td>Title</td>
             <td>Record Label</td>
             <td>Date</td>
           </tr>
-            <tr>
+            <tr class="w3-hover-pink">
             <td>Every Little Bit Hurts</td>
             <td>Tamla</td>
             <td>1964</td>
             </tr>
-            <tr>
+            <tr class="w3-hover-pink">
             <td>Brand New !</td>
             <td>Birthright</td>
             <td>1980</td>
             </tr>
-            <tr>
+            <tr class="w3-hover-pink">
             <td>All It Takes </td>
             <td>Motorcity Records </td>
             <td>1991</td>
             </tr>
-            <tr>
+            <tr class="w3-hover-pink">
             <td>It's A Woman's World</td>
             <td>Volt</td>
             <td>1999</td>
             </tr>
-            <tr>
+            <tr class="w3-hover-pink">
             <td>My Love Is Your Love</td>
             <td>Bestway Records</td>
             <td>2003</td>
             </tr>
         </tbody>
     </table>
+<p>
 
 
-    <h1>Contact Us</h1>
-    <fieldset>
-        <legend>Contact Information</legend>
-        <h3>Personal Information</h3>
-        <form id="myMailerForm" method="post" action="mailto:sherd@dcccd.edu">
+</p>
+
+    <div class="w3-card-3">
+
+      <div class="w3-container" style= "width:30%">
+        <h2 class="w3-text-black">Contact Information</h2>
+      </div>
+      
+      <form class="w3-container">
+      
+      <label >Name</label>
+      <input class="w3-input w3-animate-input w3-round" type="text" style="width:30%">
+      
+      <label>Email</label>
+      <input class="w3-input w3-animate-input w3-round" type="text" style="width:30%">
+      
+      </form>
+      
+      </div>
           <p>
-            <label title="Enter your full name.">Name <input type="text" name="Name" placeholder="Name"></label>
-          </p>
-          <p>
-            <label title="Enter your email address.">E-Mail <input type="text" name="Email" placeholder="Email"></label>
-          </p>
-          <p>
-            <label title="Select your program.">Program</label>
+            <label title="Select your time zone." style= "width:15">Timezone</label>
             <select name="programID">
               <option value="">&larr;&nbsp;Select Time Zone&nbsp;&rarr;</option>
               <option value="1">PT</option>
@@ -79,13 +89,17 @@
               <option value="4">ET</option>
             </select>
           </p>
-          <p>
-            <label title="Select to be contacted."><input type="checkbox" name="contact-me"> Contact Me</label>
-          </p>
+
+          <input class="w3-check" type="checkbox" checked="checked">
+          <label>Contact Me</label>
+
           <p>
             <h3>Have you heard of Brenda Holloway before?</h3>
-            Yes <input type="radio" name="xxxx" value="yyyy" checked>
-            No <input type="radio" name="xxxx" value="yyyy">
+            <input class="w3-radio" type="radio" name="y/n" value="yes" checked>
+<label>Yes</label>
+
+<input class="w3-radio" type="radio" name="y/n" value="no">
+<label>No</label>
           </p>
           <p>
             <label for="message">What do you know about Brenda Holloway?</label><br>
@@ -94,5 +108,10 @@
           <input type="submit" name="submit" value="Send Mail">
         </form>
       </fieldset>
+
+      <footer class="w3-container w3-dark-blue">
+        <a href="https://www.dallascollege.edu/pages/default.aspx" target="_blank" class="w3-button w3-light-grey w3-hover-blue">Visit Dallas College</a>
+        <a href="mailto:pburks@dcccd.edu" class="w3-button w3-light-grey w3-hover-blue">Email the Professor</a>
+    </footer>
 </body>
 </html>

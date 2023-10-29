@@ -1,5 +1,7 @@
+
+
 body{
-    background-color: lightgoldenrodyellow
+    background-color:#ffebbb;
 }
 h1, h2 {
     font-family: Arial, sans-serif;
@@ -8,7 +10,7 @@ h1, h2 {
 
 p {
     font-family: Georgia, serif;
-    color: green
+    color: black
 
 }
 
@@ -48,3 +50,14 @@ tbody tr:hover {
     font-family: Georgia;
     background-color: lightcyan
   }
+ 
+#site-logo {
+    position: absolute;
+    top: 10px; 
+    left: 10px; 
+    max-width: 150px; 
+    z-index: 100; 
+}
+header {
+    margin-top: 150px;
+}
